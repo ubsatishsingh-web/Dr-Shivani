@@ -82,7 +82,7 @@ export function ChatBot() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-primary text-white rounded-full shadow-2xl flex items-center justify-center border-4 border-white"
+        className="fixed bottom-6 right-4 sm:right-6 z-50 w-16 h-16 bg-primary text-white rounded-full shadow-2xl flex items-center justify-center border-4 border-white"
       >
         {isOpen ? <X size={28} /> : <MessageCircle size={28} />}
       </motion.button>
@@ -94,8 +94,8 @@ export function ChatBot() {
             initial={{ opacity: 0, y: 100, scale: 0.8 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 100, scale: 0.8 }}
-            className="fixed bottom-24 right-6 z-50 w-80 md:w-96 glass-panel overflow-hidden flex flex-col shadow-2xl"
-            style={{ height: "500px" }}
+            className="fixed bottom-24 right-4 sm:right-6 z-50 w-[calc(100vw-32px)] sm:w-85 md:w-96 glass-panel overflow-hidden flex flex-col shadow-2xl"
+            style={{ height: "min(500px, calc(100vh - 120px))" }}
           >
             {/* Header */}
             <div className="bg-primary p-4 text-white flex items-center gap-3">

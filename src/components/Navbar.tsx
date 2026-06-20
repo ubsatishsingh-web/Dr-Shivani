@@ -28,11 +28,13 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 mx-4 md:mx-10 mt-5 px-6 h-20 flex items-center justify-between glass-panel ${
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 transition-[box-shadow,background-color,border-color,backdrop-filter] duration-300 mx-4 md:mx-10 mt-5 glass-panel",
+        isOpen ? "max-h-[calc(100vh-40px)] overflow-y-auto" : "overflow-hidden",
         scrolled ? "shadow-lg" : "shadow-sm"
-      }`}
+      )}
     >
-      <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
+      <div className="h-20 px-6 flex items-center justify-between max-w-7xl mx-auto w-full">
         <div className="flex items-center">
           <a href="#home" className="flex items-center gap-2">
             <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white">
@@ -66,19 +68,20 @@ export function Navbar() {
           </div>
         </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center gap-4">
-            <a href="tel:+919236737372" className="text-primary hover:text-primary/80">
-              <Phone size={20} />
-            </a>
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-foreground p-2"
-            >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
+        {/* Mobile Menu Button */}
+        <div className="md:hidden flex items-center gap-4">
+          <a href="tel:+919236737372" className="text-primary hover:text-primary/80 p-2">
+            <Phone size={20} />
+          </a>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-foreground p-2 focus:outline-none"
+            aria-label="Toggle Menu"
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
+      </div>
 
       {/* Mobile Nav */}
       <AnimatePresence>
@@ -87,26 +90,26 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t"
+            className="md:hidden bg-white/75 backdrop-blur-md border-t border-teal-100/40"
           >
-            <div className="px-4 pt-2 pb-6 space-y-1">
+            <div className="px-6 pt-2 pb-6 space-y-1">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="block px-3 py-4 text-base font-medium text-foreground/80 hover:text-primary hover:bg-gray-50 rounded-md"
+                  className="block px-3 py-3.5 text-base font-semibold text-foreground/80 hover:text-primary hover:bg-teal-50/50 rounded-lg transition-colors"
                 >
                   {link.name}
                 </a>
               ))}
-              <div className="pt-4 px-3">
+              <div className="pt-4">
                 <a 
                   href="#contact" 
                   onClick={() => setIsOpen(false)}
-                  className={cn(buttonVariants({ size: "default" }), "w-full bg-primary font-bold shadow-md flex items-center justify-center")}
+                  className={cn(buttonVariants({ size: "default" }), "w-full bg-primary font-bold shadow-md flex items-center justify-center py-6 text-base rounded-xl")}
                 >
-                  <Calendar className="mr-2 h-4 w-4" />
+                  <Calendar className="mr-2 h-5 w-5" />
                   Book Appointment
                 </a>
               </div>

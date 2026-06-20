@@ -24,11 +24,11 @@ export function Hero() {
               <span>24/7 EMERGENCY DENTAL HELP & PAIN MANAGEMENT</span>
             </div>
             
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-[1.1] mb-6 text-balance text-foreground">
-              Elite Dental Care at <span className="text-primary">SHMIK 24x7.</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6 text-balance text-foreground">
+              Elite Dental Care at <span className="text-primary font-bold">SHMIK 24x7.</span>
             </h1>
             
-            <p className="text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed font-semibold">
               Led by Dr. Shivani Srivastava, our state-of-the-art clinic in Vrindavan Colony, Lucknow provides premier dental treatment with round-the-clock professional emergency care.
             </p>
             
@@ -47,7 +47,7 @@ export function Hero() {
               </a>
             </div>
 
-            <div className="mt-12 grid grid-cols-2 gap-4">
+            <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="glass-panel p-6 flex flex-col gap-1">
                 <span className="text-[10px] uppercase tracking-widest font-bold text-primary mb-2">Google Rating</span>
                 <div className="flex items-center gap-2 text-foreground">
@@ -56,7 +56,7 @@ export function Hero() {
                     {[1, 2, 3, 4, 5].map((i) => <Star key={i} size={16} fill="currentColor" />)}
                   </div>
                 </div>
-                <span className="text-xs text-muted-foreground">Based on verified Lucknow reviews</span>
+                <span className="text-xs text-muted-foreground font-semibold">Based on verified Lucknow reviews</span>
               </div>
               <div className="glass-panel p-6 flex flex-col gap-1">
                 <span className="text-[10px] uppercase tracking-widest font-bold text-primary mb-2">Key Highlights</span>
@@ -84,11 +84,11 @@ export function Hero() {
               />
             </div>
             
-            {/* Floating Card */}
+            {/* Floating Card - Hidden on small mobile screens to prevent right overlay overflow */}
             <motion.div
               animate={{ y: [0, -20, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-6 -right-6 z-20 glass-panel p-6 rounded-2xl max-w-[240px]"
+              className="absolute -bottom-6 -right-6 z-20 glass-panel p-6 rounded-2xl max-w-[240px] hidden sm:block"
             >
               <div className="flex items-center gap-4 mb-3">
                 <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-primary bg-gray-100 flex items-center justify-center">

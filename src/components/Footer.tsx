@@ -76,9 +76,14 @@ export function Footer() {
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
           </div>
-          <p className="flex items-center gap-1">
-            Made with <Heart size={14} className="text-red-400 fill-red-400" /> for healthy smiles
-          </p>
+          <div className="flex flex-col items-center md:items-end gap-1">
+            <p className="flex items-center gap-1">
+              Made with <Heart size={14} className="text-red-400 fill-red-400" /> for healthy smiles
+            </p>
+            <p className="text-xs text-white/40">
+              Designed by <a href="https://zeratech.io" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline decoration-dotted">Zera Technologies</a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
