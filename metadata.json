@@ -1,0 +1,8 @@
+{
+  "name": "SHMIK 24x7 Dental Clinic",
+  "description": "Premium quality dental treatment with professional care and 24x7 emergency midnight call-out support in Lucknow, led by Dr. Shivani Srivastava.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
