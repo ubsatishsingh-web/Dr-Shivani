@@ -76,13 +76,13 @@ export function Reviews() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-          <div className="max-w-2xl">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
+          <div className="max-w-2xl text-left">
             <motion.h2
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="text-4xl md:text-5xl font-bold mb-4"
+              className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
             >
               What Our <span className="text-primary">Patients Say</span>
             </motion.h2>
@@ -91,7 +91,7 @@ export function Reviews() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-lg text-foreground/60"
+              className="text-base sm:text-lg text-foreground/60"
             >
               We take pride in providing exceptional care. Read about the experiences of our community members.
             </motion.p>
@@ -101,7 +101,7 @@ export function Reviews() {
             href="https://share.google/Do7sPHr7lTaZTgL8c"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300 border border-teal-50"
+            className="flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300 border border-teal-50 w-full sm:w-auto"
           >
             <div className="flex -space-x-3">
               {[1, 2, 3, 4].map((i) => (
@@ -110,7 +110,7 @@ export function Reviews() {
                 </div>
               ))}
             </div>
-            <div>
+            <div className="text-left">
               <div className="flex items-center gap-1 text-amber-500">
                 {[1, 2, 3, 4, 5].map((i) => <Star key={i} size={14} fill="currentColor" />)}
               </div>
@@ -129,8 +129,8 @@ export function Reviews() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <Card className="h-full border-none shadow-sm glass-panel p-2">
-                <CardContent className="pt-8 px-6 pb-8">
+              <Card className="h-full border-none shadow-sm glass-panel p-1 sm:p-2">
+                <CardContent className="pt-6 px-4 pb-6 sm:pt-8 sm:px-6 sm:pb-8">
                   <div className="flex items-center gap-1 text-yellow-400 mb-4">
                     {[...Array(review.rating)].map((_, i) => (
                       <Star key={i} size={16} fill="currentColor" />

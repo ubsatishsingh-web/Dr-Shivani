@@ -19,9 +19,9 @@ export function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/20 text-primary text-xs font-bold mb-6">
-              <span className="text-primary animate-pulse">●</span>
-              <span>24/7 EMERGENCY DENTAL HELP & PAIN MANAGEMENT</span>
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-accent/20 text-primary text-[10px] sm:text-xs font-bold mb-6 max-w-full text-center">
+              <span className="text-primary animate-pulse shrink-0">●</span>
+              <span className="leading-tight">24/7 EMERGENCY DENTAL HELP & PAIN MANAGEMENT</span>
             </div>
             
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6 text-balance text-foreground">

@@ -87,18 +87,18 @@ export function About() {
             </div>
 
             {/* Quick stats panel */}
-            <div className="grid grid-cols-3 gap-4 pt-4">
-              <div className="glass-panel p-4 text-center border-teal-100">
-                <p className="text-2xl md:text-3xl font-extrabold text-primary">100%</p>
-                <p className="text-[10px] uppercase tracking-wider font-extrabold text-muted-foreground">Painless Goal</p>
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-4">
+              <div className="glass-panel p-2.5 sm:p-4 text-center border-teal-100">
+                <p className="text-xl sm:text-2xl md:text-3xl font-extrabold text-primary">100%</p>
+                <p className="text-[8px] sm:text-[10px] uppercase tracking-wider font-extrabold text-muted-foreground">Painless Goal</p>
               </div>
-              <div className="glass-panel p-4 text-center border-teal-100">
-                <p className="text-2xl md:text-3xl font-extrabold text-primary">24/7</p>
-                <p className="text-[10px] uppercase tracking-wider font-extrabold text-muted-foreground">Emergency Call</p>
+              <div className="glass-panel p-2.5 sm:p-4 text-center border-teal-100 font-sans">
+                <p className="text-xl sm:text-2xl md:text-3xl font-extrabold text-primary">24/7</p>
+                <p className="text-[8px] sm:text-[10px] uppercase tracking-wider font-extrabold text-muted-foreground">Emergency Call</p>
               </div>
-              <div className="glass-panel p-4 text-center border-teal-100">
-                <p className="text-2xl md:text-3xl font-extrabold text-primary">4.9★</p>
-                <p className="text-[10px] uppercase tracking-wider font-extrabold text-muted-foreground">Google Rating</p>
+              <div className="glass-panel p-2.5 sm:p-4 text-center border-teal-100">
+                <p className="text-xl sm:text-2xl md:text-3xl font-extrabold text-primary">4.9★</p>
+                <p className="text-[8px] sm:text-[10px] uppercase tracking-wider font-extrabold text-muted-foreground">Google Rating</p>
               </div>
             </div>
           </motion.div>
@@ -110,7 +110,7 @@ export function About() {
             viewport={{ once: true }}
             className="lg:col-span-5 space-y-6"
           >
-            <div className="glass-panel p-8 md:p-10 border-teal-100 bg-white/80 shadow-lg rounded-3xl space-y-6">
+            <div className="glass-panel p-5 sm:p-8 md:p-10 border-teal-100 bg-white/80 shadow-lg rounded-2xl sm:rounded-3xl space-y-6">
               <h4 className="text-xl font-bold text-foreground">Why Book with Dr. Shivani?</h4>
               
               <div className="space-y-4">
@@ -225,7 +225,7 @@ export function About() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="lg:col-span-3 rounded-[32px] overflow-hidden bg-white/80 border border-teal-100/50 shadow-md group flex flex-col justify-between"
+              className="lg:col-span-3 rounded-2xl sm:rounded-[32px] overflow-hidden bg-white/80 border border-teal-100/50 shadow-md group flex flex-col justify-between"
             >
               <div className="aspect-[4/3] w-full overflow-hidden relative">
                 <img
@@ -252,7 +252,7 @@ export function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="lg:col-span-3 rounded-[32px] overflow-hidden bg-white/80 border border-teal-100/50 shadow-md group flex flex-col justify-between"
+              className="lg:col-span-3 rounded-2xl sm:rounded-[32px] overflow-hidden bg-white/80 border border-teal-100/50 shadow-md group flex flex-col justify-between"
             >
               <div className="aspect-[4/3] w-full overflow-hidden relative">
                 <img
@@ -278,7 +278,7 @@ export function About() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="lg:col-span-2 rounded-[32px] overflow-hidden bg-white/80 border border-teal-100/50 shadow-md group flex flex-col justify-between"
+              className="lg:col-span-2 rounded-2xl sm:rounded-[32px] overflow-hidden bg-white/80 border border-teal-100/50 shadow-md group flex flex-col justify-between"
             >
               <div className="aspect-[3/4] w-full overflow-hidden relative">
                 <img
@@ -305,7 +305,7 @@ export function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="lg:col-span-2 rounded-[32px] overflow-hidden bg-white/80 border border-teal-100/50 shadow-md group flex flex-col justify-between"
+              className="lg:col-span-2 rounded-2xl sm:rounded-[32px] overflow-hidden bg-white/80 border border-teal-100/50 shadow-md group flex flex-col justify-between"
             >
               <div className="aspect-[3/4] w-full overflow-hidden relative">
                 <img
@@ -332,7 +332,7 @@ export function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="lg:col-span-2 rounded-[32px] overflow-hidden bg-white/80 border border-teal-100/50 shadow-md group flex flex-col justify-between"
+              className="lg:col-span-2 rounded-2xl sm:rounded-[32px] overflow-hidden bg-white/80 border border-teal-100/50 shadow-md group flex flex-col justify-between"
             >
               <div className="aspect-[3/4] w-full overflow-hidden relative">
                 <img

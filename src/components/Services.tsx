@@ -171,9 +171,9 @@ export function Services() {
         {/* Interactive, Educational Clinical Detail Panel */}
         <motion.div 
           layout
-          className="bg-teal-50/20 border border-teal-100/60 rounded-[36px] p-6 md:p-12 shadow-sm mb-24"
+          className="bg-teal-50/20 border border-teal-100/60 rounded-2xl sm:rounded-[36px] p-4 sm:p-6 md:p-12 shadow-sm mb-24"
         >
-          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 border-b border-teal-100 pb-8 mb-8">
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 border-b border-teal-100 pb-8 mb-8 w-full">
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-100 text-teal-850 text-[10px] font-black uppercase tracking-wider mb-2">
                 ● Advanced Clinical Guide
@@ -186,10 +186,10 @@ export function Services() {
               </p>
             </div>
             
-            <div className="flex gap-2">
+            <div className="flex flex-col sm:flex-row gap-2 w-full lg:w-auto">
               <a 
                 href="#contact" 
-                className={cn(buttonVariants({ size: "default" }), "bg-primary text-white hover:bg-primary/95 rounded-full font-bold px-6 shadow-md")}
+                className={cn(buttonVariants({ size: "default" }), "bg-primary text-white hover:bg-primary/95 rounded-full font-bold px-6 shadow-md w-full sm:w-auto justify-center")}
               >
                 <Calendar className="mr-2 h-4 w-4" />
                 Book Treatment
@@ -197,7 +197,7 @@ export function Services() {
               {activeDetail.id === "emergency-care" && (
                 <a 
                   href="tel:+919236737372" 
-                  className={cn(buttonVariants({ size: "default", variant: "outline" }), "border-red-600 text-red-600 hover:bg-red-50 rounded-full px-5 font-bold")}
+                  className={cn(buttonVariants({ size: "default", variant: "outline" }), "border-red-600 text-red-600 hover:bg-red-50 rounded-full px-5 font-bold w-full sm:w-auto justify-center")}
                 >
                   <Phone className="mr-2 h-4 w-4" />
                   Call Clinic (24/7)
@@ -344,7 +344,7 @@ export function Services() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
-                className="p-8 md:p-12 rounded-[32px] bg-teal-50/20 border border-teal-100/40 relative overflow-hidden group hover:bg-teal-50/40 transition-colors duration-300 text-left"
+                className="p-5 sm:p-8 md:p-12 rounded-2xl sm:rounded-[32px] bg-teal-50/20 border border-teal-100/40 relative overflow-hidden group hover:bg-teal-50/40 transition-colors duration-300 text-left"
               >
                 <div className="absolute top-6 right-8 text-[120px] font-black leading-none text-teal-900/5 select-none font-sans">
                   0{index + 1}
