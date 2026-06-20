@@ -77,7 +77,7 @@ export function Hero() {
           >
             <div className="relative z-10 rounded-[40px] overflow-hidden shadow-2xl aspect-[4/5] lg:aspect-square bg-gray-100">
               <img
-                src="/src/assets/images/dr_shivani_real_clinic_1781965590126.jpg"
+                src="https://lh3.googleusercontent.com/d/1lX2L7UNmL2Bt8zs6LjiiH65Y1-QBCtrO"
                 alt="Dr. Shivani Srivastava - Lead Dentist"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
