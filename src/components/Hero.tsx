@@ -92,7 +92,7 @@ export function Hero() {
             >
               <div className="flex items-center gap-4 mb-3">
                 <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-primary bg-gray-100 flex items-center justify-center">
-                  <img src="/src/assets/images/dr_shivani_headshot_mask_1781967654103.jpg" alt="Dr. Shivani Profile" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                  <img src="https://lh3.googleusercontent.com/d/1hk2aofFuxb-6lOIoRgDF9-5I2H-6uiSR" alt="Dr. Shivani Profile" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                 </div>
                 <div>
                   <p className="font-bold text-sm leading-tight">Dr. Shivani Srivastava</p>

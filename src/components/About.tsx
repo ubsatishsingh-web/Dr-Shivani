@@ -145,7 +145,7 @@ export function About() {
               {/* Bio signature widget */}
               <div className="pt-6 border-t border-teal-100 flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden border border-primary shrink-0">
-                  <img src="/src/assets/images/dr_shivani_headshot_mask_1781967654103.jpg" alt="Dr. Shivani Srivastava Profile Photo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                  <img src="https://lh3.googleusercontent.com/d/1hk2aofFuxb-6lOIoRgDF9-5I2H-6uiSR" alt="Dr. Shivani Srivastava Profile Photo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                 </div>
                 <div>
                   <p className="font-extrabold text-sm leading-tight text-foreground">Dr. Shivani Srivastava</p>
@@ -229,7 +229,7 @@ export function About() {
             >
               <div className="aspect-[4/3] w-full overflow-hidden relative">
                 <img
-                  src="/src/assets/images/shmi_clinic_room_1781967171131.jpg"
+                  src="https://lh3.googleusercontent.com/d/1w2u9iYImaEpSk4gVrKFKqkuvF5Y0Xp51"
                   alt="SHMIK 24x7 Dental Clinic Surgery Room"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
@@ -256,7 +256,7 @@ export function About() {
             >
               <div className="aspect-[4/3] w-full overflow-hidden relative">
                 <img
-                  src="/src/assets/images/shmi_kids_dentist_perfect_mask_1781968282473.jpg"
+                  src="https://lh3.googleusercontent.com/d/1lgJBuSYlFPH44rvbwDRO15tGvDgJkKde"
                   alt="Kids Dentistry at SHMIK Dental Clinic"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
@@ -282,7 +282,7 @@ export function About() {
             >
               <div className="aspect-[3/4] w-full overflow-hidden relative">
                 <img
-                  src="/src/assets/images/shmi_implant_model_mask_1781968856674.jpg"
+                  src="https://lh3.googleusercontent.com/d/16gDVOPaLkEf4p55gktyR6hTNRHoWLtzo"
                   alt="Dental Implant model, prosthetic teeth replacement"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
@@ -309,7 +309,7 @@ export function About() {
             >
               <div className="aspect-[3/4] w-full overflow-hidden relative">
                 <img
-                  src="/src/assets/images/shmi_doctor_treat_1781967229734.jpg"
+                  src="https://lh3.googleusercontent.com/d/13zIhZy19WYzo6DIJrr2pL9WynuXcK1u7"
                   alt="Precise RCT and treatments"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
@@ -336,7 +336,7 @@ export function About() {
             >
               <div className="aspect-[3/4] w-full overflow-hidden relative">
                 <img
-                  src="/src/assets/images/shmi_kids_consult_anonymous_1781968557400.jpg"
+                  src="https://lh3.googleusercontent.com/d/1PJHgBsveWb2zFnYvF0AK_LaTQT_vMLP5"
                   alt="Compassionate client counseling"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
