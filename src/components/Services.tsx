@@ -19,6 +19,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { servicesDetailData } from "../data/servicesDetail";
+import { ClinicShowcase } from "./ClinicShowcase";
 
 const services = [
   {
@@ -94,8 +95,9 @@ export function Services() {
   };
 
   return (
-    <section id="services" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <>
+      <section id="services" className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <motion.div
@@ -164,11 +166,17 @@ export function Services() {
             );
           })}
         </div>
+      </div>
+    </section>
 
-        {/* Anchor point for smooth scrolling */}
-        <div id="interactive-guide-anchor" className="scroll-mt-24" />
+      <ClinicShowcase />
 
-        {/* Interactive, Educational Clinical Detail Panel */}
+      <section className="py-24 bg-white pt-0">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Anchor point for smooth scrolling */}
+          <div id="interactive-guide-anchor" className="scroll-mt-24" />
+
+          {/* Interactive, Educational Clinical Detail Panel */}
         <motion.div 
           layout
           className="bg-teal-50/20 border border-teal-100/60 rounded-2xl sm:rounded-[36px] p-4 sm:p-6 md:p-12 shadow-sm mb-24"
@@ -416,5 +424,6 @@ export function Services() {
 
       </div>
     </section>
+    </>
   );
 }
